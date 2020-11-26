@@ -9,6 +9,8 @@ Visit https://www.hacker-ai.com and enter your Show HN title variations and see 
 ## Under the hood
 
 The alforithm has been learned it's wisdom from approx. 100k Hacker News posts. The data was collected from this open database under MIT-lisence.
+https://www.kaggle.com/hacker-news/hacker-news
+https://github.com/HackerNews/API/blob/master/LICENSE
 
 ## Accuracy
 
