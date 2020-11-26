@@ -31,6 +31,8 @@ function getPrediction(title) {
     $( "#containerA" ).removeClass( "winner" );
     $( "#containerB" ).removeClass( "winner" );
     $( "#result" ).html("");
+    $( "#scoreA" ).html("");
+    $( "#scoreB" ).html("");
     var titleA = $('#titleA').val()
     var titleB = $('#titleB').val().replace("Show HN: ", "")
     sa_event("prediction");
@@ -41,6 +43,8 @@ function getPrediction(title) {
     var answerB = await getPrediction(titleB.replace("Show HN: ", ""))
           console.log(answer)
           console.log(answerB)
+          $( "#scoreA" ).html( "Points: " + answer.toFixed(0) );
+          $( "#scoreB" ).html( "Points: " + answerB.toFixed(0));
           $(".results").css("display", "block");
           if (answer > answerB) {
             console.log("A wins")

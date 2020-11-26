@@ -7,13 +7,17 @@ html {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: grayscale;
     background: rgb(255,138,138);
-    background: linear-gradient(302deg, rgb(255 138 138 / 77%) 0%, rgb(183 116 255 / 94%) 100%);
+    /* background: linear-gradient(302deg, rgb(255 138 138 / 77%) 0%, rgb(183 116 255 / 94%) 100%); */
+    /* background: linear-gradient(302deg, rgb(15 16 24 / 77%) 0%, rgb(57 45 103 / 94%) 100%); */
+    background: linear-gradient(302deg, rgb(30 21 53 / 77%) 0%, rgb(57 45 103 / 94%)100%);
     color: #fff;
     font-weight: 300;
     line-height: 1.62857;
     min-height: 100%;
   }
-  
+  .mt1 a {
+    color: #fff;
+  }
   .h3, h3 {
       font-size: 1.65rem;
   }
@@ -120,7 +124,8 @@ html {
       -moz-border-radius: 5px;
       border-radius: 5px;
       background-color: #7dcdf0;
-    background: linear-gradient(302deg, rgb(236 255 138 / 77%) 0%, rgb(116 255 140 / 58%) 100%);
+      background: linear-gradient(302deg, rgb(138 244 255 / 77%) 0%, rgb(212 227 255 / 58%) 100%);
+    /* background: linear-gradient(302deg, rgb(236 255 138 / 77%) 0%, rgb(116 255 140 / 58%) 100%); */
       box-shadow: 0 29px 60px 0 rgba(54,57,73,.09);
   }
   
@@ -160,7 +165,7 @@ html {
     box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
 }
 
-.navbar a:visited, .navbar a:hover {
+.navbar a:hover {
   color: #fff!important;
 }
 
