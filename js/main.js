@@ -33,7 +33,7 @@ function getPrediction(title) {
     $( "#result" ).html("");
     var titleA = $('#titleA').val()
     var titleB = $('#titleB').val().replace("Show HN: ", "")
-    console.log(titleA)
+    sa_event("prediction");
 
     net.fromJSON(staticNet);
     net.toFunction();
