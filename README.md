@@ -8,10 +8,12 @@ Visit https://www.hacker-ai.com and enter your Show HN title variations and see 
 
 ## Under the hood
 
-The alforithm has been learned it's wisdom from approx. 100k Hacker News posts. The data was collected from this open database under MIT-lisence.
+Hacker-AI uses a brain.js feed-forward neural network machine learning model that has been trained with the below dataset that contains all stories and comments between 2006 and 2017
 https://www.kaggle.com/hacker-news/hacker-news
 https://github.com/HackerNews/API/blob/master/LICENSE
 
+The title is transformed it into an array of numbers between 0 and 1 (each character is a number) and this data is fed (along with the number of points) to the neural network. After learning and iterating over the data, it spits out the prediction model that this tool uses to predict the outcome of different title variations.
+
 ## Accuracy
 
-Currrently the AI predictions are correct 60% of the time. So, if you don't have any clue which of your titles you should use, in the long run the AI will give you better results.
+The current algorithm has been tested with approx. 10.000 posts. It has been able to predict 60% of the cases correctly. So, it's not perfect yet, but we at Grew use this method in a situations where we are uncertain which type of title would work, and don't have time to do "proper" pre-testing.
