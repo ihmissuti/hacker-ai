@@ -1,0 +1,22 @@
+{
+  "name": "hacker-ai",
+  "version": "1.0.0",
+  "description": "Pre-test Hacker News Show HN posts with AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grew-dev/hacker-ai.git"
+  },
+  "keywords": [
+    "AI"
+  ],
+  "author": "Kimmo Ihanus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grew-dev/hacker-ai/issues"
+  },
+  "homepage": "https://github.com/Grew-dev/hacker-ai#readme"
+}
