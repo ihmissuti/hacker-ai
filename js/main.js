@@ -16,10 +16,12 @@ function encode(arg) {
 }
 function getPrediction(title) {
       var result = net.run(encode(adjustSize(title, 80)));
-      return result.score*4338
+      return result.score*3531
   }
 
-
+  function relDiff(a, b) {
+    return  100 * Math.abs( ( a - b ) / ( (a+b)/2 ) );
+   }
   function adjustSize(string) {
       
       while (string.length < longest) {
@@ -43,15 +45,20 @@ function getPrediction(title) {
     var answerB = await getPrediction(titleB.replace("Show HN: ", ""))
           console.log(answer)
           console.log(answerB)
-          $( "#scoreA" ).html( "Points: " + answer.toFixed(0) );
-          $( "#scoreB" ).html( "Points: " + answerB.toFixed(0));
+
           $(".results").css("display", "block");
           if (answer > answerB) {
             console.log("A wins")
+            // $( "#scoreA" ).html( "Points: " + ((num2 - num1) / num1 * 100 + "%"); );
+            // $( "#scoreB" ).html( "Points: " + answerB.toFixed(0));
+            $( "#scoreA" ).html( (((answer - answerB) / answerB * 100).toFixed(0)  + "% better"));
+            // $( "#scoreB" ).html( "Points: " + answerB.toFixed(0));
+
             $( "#containerA" ).addClass( "winner" );
             $( "#result" ).html( "The winner is title A: " + titleA );
           } else {
             console.log("B wins")
+            $( "#scoreB" ).html( (((answerB - answer) / answer * 100).toFixed(0) + "% better"));
             $( "#containerB" ).addClass( "winner" );
             $( "#result" ).html( "The winner is title B: " + titleB);
           }
