@@ -10,9 +10,12 @@ Visit https://www.hacker-ai.com and enter your Show HN title variations and see 
 
 ## Under the hood
 
-Hacker-AI uses a brain.js feed-forward neural network machine learning model. The example in this Github repo uses a dataset that contains all stories and comments between 2006 and 2017. The live site hacker-ai.com updates it's data on monthly basis from Hacker News API and P
+Hacker-AI uses a brain.js feed-forward neural network machine learning model. The example in this Github repo uses a dataset that contains all stories and comments between 2006 and 2017.
 https://www.kaggle.com/hacker-news/hacker-news
+
 https://github.com/HackerNews/API/blob/master/LICENSE
+
+ The live site hacker-ai.com updates it's data monthly from Hacker News API and Product Hunt API.
 
 ## Accuracy
 
